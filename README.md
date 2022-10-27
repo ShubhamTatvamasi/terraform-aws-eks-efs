@@ -9,3 +9,8 @@ Deploy EKS cluster:
 ```bash
 terraform apply -target=module.eks -auto-approve
 ```
+
+Deploy EFS:
+```bash
+terraform apply
+```
