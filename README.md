@@ -14,3 +14,15 @@ Deploy EFS:
 ```bash
 terraform apply
 ```
+
+Update kubeconfig:
+```bash
+aws eks update-kubeconfig \
+  --name $(terraform output -raw cluster_name) \
+  --region $(terraform output -raw region)
+```
+
+Destroy cluster:
+```bash
+terraform destroy -auto-approve
+```
