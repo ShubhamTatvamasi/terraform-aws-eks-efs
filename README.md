@@ -12,7 +12,7 @@ terraform apply -target=module.eks -auto-approve
 
 Deploy EFS:
 ```bash
-terraform apply
+terraform apply -auto-approve
 ```
 
 Update kubeconfig:
