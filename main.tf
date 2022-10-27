@@ -14,6 +14,6 @@ module "efs" {
   vpc_id                  = module.eks.vpc_id
   subnets                 = module.eks.subnets
   node_security_group_id  = module.eks.node_security_group_id
-  oidc_provider_arn       = module.eks.node_security_group_id
-  cluster_oidc_issuer_url = module.eks.node_security_group_id
+  oidc_provider_arn       = module.eks.oidc_provider_arn
+  cluster_oidc_issuer_url = module.eks.cluster_oidc_issuer_url
 }
